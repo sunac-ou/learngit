@@ -1,0 +1,196 @@
+body{
+     	margin: 0;
+     	padding: 0;
+     }
+
+    .header {
+         position: fixed;
+         top: 0;
+         height: 60px;
+         width: 100%;
+         background: #29bde0;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         z-index:1;
+         border-bottom: 1px solid #74d4eb;
+         color: white;
+         font-size: 1.8rem;
+
+    }
+
+
+
+    .bg-01{
+    	background: url("task7.png");
+    	background-repeat: no-repeat;
+    	background-position: -265px -7px;  
+    	width:100px;
+    	height: 85px;
+    	transform: scale(0.35);
+
+    }
+
+
+    .bg-02{
+    	background: url("task7.png");
+    	background-repeat: no-repeat;
+    	background-position: -390px -7px;  
+    	width:100px;
+    	height: 85px;
+    	transform: scale(0.35);
+
+    }
+     
+    
+
+
+
+     .box{
+        margin-top:60px;
+     	height: 170px;
+     	width: 100%;
+     	background: #29bde0;
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+     	border: none;
+     	
+     }
+
+     .box-1 {
+        
+     	height: 120px;
+     	width: 100%;
+     	background: #29bde0;
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+        border: 1px solid #29bde0;
+     	
+     	
+     }
+
+     .box-a{
+            margin-top: 10px;
+     	    width: 85%;
+            height: 150px;
+            color: #ffc865;
+            font-size: 2.1rem;
+
+     }
+
+     .box-b{
+     	    width: 85%;
+            height: 150px;
+            line-height: 170%;
+            
+            font-size: 1.5rem;
+            color: white;
+     }
+
+     
+     .bg-03{
+    	background: #eee url(task7-2.png) no-repeat;
+    	width: 400px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        margin-top: 10px;
+        background-size: cover;
+        transform: scale(0.7);
+        border: 0;
+        font-size :0;
+    }
+
+    .p1 {
+    	height: 130px;
+    	width: 100%;
+    	border-bottom: 1px solid #dddddd;
+    }
+
+    .p1-1{
+    	margin-top: 10px;
+    	height: 30px;;
+    	width: 100%;
+    	display: flex;
+
+
+
+    }
+
+    .p1-1-1{
+    	width: 60%;
+    	height: 30px;
+    	margin-left: 8%;
+    	font-size: 2.5rem;
+    	line-height: 220%;
+    	
+    }
+
+    .p1-1-2{
+    	width: 32%;
+    	height: 30px;
+    	font-size: 1.5rem;
+    	color: #cbcbcb;
+
+    }
+
+    .p2{
+    	margin-top: 20px;
+    	margin-left: 8%;
+        width:92%;
+        height: 60px;
+        display: flex;
+        font-size: 1.7rem;
+        line-height: 200%;
+        color: #a6a6a6;
+    }
+
+
+    .footer{
+
+    	position: fixed;
+    	bottom: 0;
+    	height: 80px;
+    	width: 100%;
+    	background-color: rgba(41,189,224,0.5);
+    	display: flex;
+        color: white;
+        
+    	
+
+    }
+
+    .footer-a{
+    	margin-top: 10px;
+    	height: 60px;
+    	width: 40%;
+    	background: #f66f6f;
+    	margin-left: 7%;
+    	border-radius: 10px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	font-size: 2.5rem;
+
+
+
+    	
+    	
+    }
+
+    .footer-b{
+    	margin-top: 10px;
+    	height: 60px;
+    	width: 40%;
+    	background: #fbb435;
+    	margin-left: 7%;
+        border-radius: 10px;
+        display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	font-size: 2.5rem;
+    }
+    	
+

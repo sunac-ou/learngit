@@ -1,0 +1,134 @@
+
+    body {
+	    margin: 0;
+	}
+    .header {
+        position: fixed;
+        top: 0px;
+        height: 3rem;
+        width: 100%;
+        background: #68cdd5;
+    color: white;
+        font-weight: bold;
+    }
+
+    .back {
+        height: 30px;
+        width: 20px;
+        margin-left: 3%;
+        margin-top: 5px;
+        position: absolute;  	
+    }
+    .text1 {         
+        text-align: center;	
+    }
+    .main { 
+        width: 100%;
+        height: calc(100% - 3rem);
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    .background {
+        margin-top: 3rem;
+        height: 12rem;
+        background-image: url("beijing.png") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .headportrait {
+   	    float: left;
+        width: 6rem;
+        height: 6rem;
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+    .address {
+        float: left;
+        margin-top: 4.5rem;
+        margin-left: 1rem;
+    }
+    .content {
+        display: -webkit-box;
+        min-height: 3rem;
+        border: .1rem solid #b3b3b3;
+        border-left: transparent;
+        border-right: transparent;
+        margin-left: 1rem;
+        margin-right: .1rem;
+        border-top: none;
+        display: flex;
+        align-items: center;
+    }
+    .border {	
+        height: 20px;
+        border-right: 5px solid #68cdd5;
+        margin-left: .5rem;
+   }
+    .star1 {
+        height: 18px;
+        width: 18px;
+        margin-top: 5px;
+        margin-left: 2.1rem;
+    }
+    .star2 {
+        height: 18px;
+        width: 18px;
+        margin-top: 5px;    
+    }
+    
+    .wire1 {
+        display: flex;
+        color: #b3b3b3 ;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .wire2 {
+        display: flex;
+        color: #b3b3b3 ;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }    
+    .tag1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100px;
+        height: 20px;
+    }
+    .tag2 {
+        width:60%;   
+    }
+    .footer {
+        position: fixed;
+        bottom: 0px;
+        height: 3rem;
+        width: 100%;
+        background: white;   	
+    }
+    .leaveword {
+        height: 2rem;
+        width: 45%;
+        background: white;
+        border: 2px solid #68cdd5;
+        margin-left: 3%;
+        margin-top: 8px;
+        float: left;
+        border-radius: 5px;
+        font-weight: bold;
+        color: #68cdd5;
+    }
+    .tel {
+        height: 2rem;
+        width: 45%;
+        background: #68cdd5;
+        margin-top: 8px;
+        margin-right: 3%;
+        float: right;
+        border: white;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+    }

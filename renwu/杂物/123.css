@@ -1,0 +1,16 @@
+
+body{
+	margin:0px;
+}/*边缘为0px*/
+.xxx{
+	padding: 3% 0px 0px 3%;
+
+}/*设置填充*/
+.ccc{
+background: red;
+ margin: 0px 3% 3% 0px;
+  padding: 30% 0px 0px 0%; 
+  border-radius: 10%;
+  width: 30%;
+  float: left;
+  }/*设置背景为红色，边缘，填充，圆角，宽度，向左浮动*/

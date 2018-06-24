@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>task5</title>
+	<style type="text/css">
+    body{
+    	margin: 0;
+    }
+    .dingbu{position: absolute;
+    	width: 100%;
+    	height: 60px;
+    	background: #68cdd5;
+    	
+    }
+    .back{position: absolute;
+        margin-top:10px;
+        margin-left: 3%;
+        	
+    }
+    .text{text-align: center;
+        
+    }
+    .beijing{position: absolute;
+        height: 300px;
+        width: 100%;
+        background: red url(beijing.png) no-repeat;
+        background-size: 100% 100%;
+        margin-top: 60px;
+
+    }
+    .bijingtu{position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+   
+    .touxiang{position: absolute;
+        float: left;
+        margin-top: 80px;
+        height: 100px;
+        width: 100px;
+        background: #7fee1d;
+        border-radius: 50px;     
+        margin-left: 40px;
+        background: red url(touxiang.png) no-repeat;
+        background-size: 100% 100%;
+        border-radius:50%；
+
+    }
+
+    .mingzi{
+    	
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 170px;
+        
+        height: 60px;
+        width:200px;
+
+        
+    }
+
+    .text1{position: absolute;
+    	height: 60px;
+    	width: 100%;
+    	margin-top: 310px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+
+    }
+
+     .text2{position: absolute;
+    	height: 60px;
+    	width: 100%;
+    	margin-top: 380px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+
+    }
+
+.text3{display: flex;
+	    align-items: center;
+    	height: 60px;
+    	width: 100%;
+    	margin-top: 450px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+    }
+
+.text4{display: flex;
+	    align-items: center;
+    	height: 60px;
+    	width: 100%;
+    	margin-top:10px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+    }
+
+.text5{display: flex;
+	    align-items: center;
+    	height: 60px;
+    	width: 100%;
+    	margin-top: 10px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+    }
+
+
+.text6{display: flex;
+	    align-items: center;
+    	height: 60px;
+    	width: 100%;
+    	margin-top: 10px;
+    	background: width;
+    	border-bottom: solid #D4D4D4;
+    }
+
+    .p1{display: flex;
+    	margin-top: 15px;
+    	height: 20px;
+    	width:100%;
+    	border-left: 4px solid #68cdd5;
+    	margin-left: 3%;
+    	padding-left: 0.4rem;
+    	align-items: center;
+    }
+    .p2{display: flex;
+    	
+    	margin-top: 5px;
+    	height: 40px;
+    	width:100%;
+    	margin-left: 4%;
+    	
+    	align-items: center;
+
+    }
+
+    .p3{display: flex;
+    	
+    	
+    	height: 40px;
+    	width:70px;
+      	
+    	margin-left: 4%;
+    	align-items: center;
+
+    	
+    }
+    .p3-1{display: flex;
+    	
+    	height: 40px;
+    	width:80px;
+    	border-left: 2px solid #D4D4D4;   	
+    	align-items: center;
+    	justify-content:center;
+    }
+
+    .p4{display: flex;
+    	
+    	
+    	height: 40px;
+    	width:70px;
+      	
+    	margin-left: 4%;
+    	align-items: center;
+
+    	
+    }
+    .p4-1{display: flex;
+    	
+    	height: 40px;
+    	width:80px;
+    	border-left: 2px solid #D4D4D4;   	
+    	align-items: center;
+    	justify-content:center;
+    }
+
+
+    .p5{display: flex;
+    	height: 40px;
+    	width:70px;      	
+    	margin-left: 4%;
+    	align-items: center;    	
+    }
+
+    .p5-1{display: flex;
+    	height: 40px;
+    	width:120px;
+    	border-left: 2px solid #D4D4D4;   	
+    	align-items: center;
+    	justify-content:center;
+    }
+
+    .p6{display: flex;
+    	height: 40px;
+    	width:70px;      	
+    	margin-left: 4%;
+    	align-items: center;
+    	border-right: 2px solid #D4D4D4;   
+    	
+
+    	
+    }
+    .p6-1{display: flex;   	
+    	height: 40px;
+    	width:70%;	  	
+    	align-items: center;
+        margin-left: 1.5em;
+    }
+
+
+    .dibu{display: flex; 
+    	width: 100%;
+    	height: 60px;
+    	background: white;
+    	align-items: center;
+    	
+
+    }
+
+
+
+    .liuyan{display: flex;
+    	float: left;
+    	margin-left:3%;
+    	width: 45%;
+    	height: 40px;
+    	background: white;
+    	border: 2px solid #68cdd5;  
+    	align-items: center; 
+    	justify-content:center;
+    	border-radius: 5px; 
+
+
+    }
+
+
+    .tel{display: flex; 
+    	float: right;
+    	margin-right: 3%;
+    	margin-left: 10%;
+    	width: 45%;
+    	height: 40px;
+    	background: #68cdd5;
+    	border: 2px solid #68cdd5;  
+    	align-items: center; 
+    	justify-content:center;
+    	border-radius: 5px; 
+        
+
+    }
+   
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="dingbu">
+<div class="back"><img src="back.png" width="auto"></div>
+<div class="text"><h3>个人主页</h3></div>
+</div>
+<div class="beijing">
+<div>
+<div class="touxiang"></div>
+<div class="mingzi">徐士林 55岁</br>
+</br><img src="zuobiao.png">&nbsp;&nbsp;中国&nbsp;山东</div>
+<div class="dizhi"></div>
+</div>
+<div class="text1"><p class="p1">专业技能</p></div>
+<div class="text2"><p class="p2"><img src="xingxing.png">&nbsp;住家&nbsp;<img src="xingxing.png">&nbsp;不含餐</p> </div>
+<div class="text3">
+<p class="p3">从业年限</p>
+<p class="p3-1">0-3年</p></div>
+<div class="text4">
+<p class="p4">工作时间</p>
+<p class="p4-1">全天</p>
+</div>
+<div class="text5">
+<p class="p5">服务价格</p>
+<p class="p5-1">25元/小时</p>
+</div>
+<div class="text6">
+<p class="p6">自我介绍</p>
+<p class="p6-1">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p>
+</div>
+<div class="dibu">
+<div class="liuyan">留言</div>
+<div class="tel">电话联系</div>
+</div>
+</body>
+</html>

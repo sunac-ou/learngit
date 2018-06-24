@@ -1,0 +1,50 @@
+body{
+    
+    background-color: #68cdd5;
+}
+
+.back{
+    margin-top: 2%;
+    margin-left:5%;
+    width: 100%;
+    height: 100%;
+}
+
+.logo1{   
+    text-align: center;
+   height: 100%;
+    margin-top: 1rem;
+}
+
+.text{
+    
+    font-weight: 50%;
+    line-height: 2.5rem;
+    margin-top:5%;
+    margin-left:15%; 
+    margin-right: 15%; 
+    margin-bottom: 15%;
+    font-family: 'Hiragino Sans GB W3','微软雅黑',sans-serif; 
+    color:white; 
+}
+
+.logo2{ display:inline;
+       float: left;
+       margin-left: 20%;
+       width: 20%;
+       text-align: center;
+}
+
+.logo3{display:inline;
+       float: right;
+       margin-right: 20%;
+       width: 20%;
+       text-align: center;
+            
+}
+p{display:inline;
+    color: white;
+    text-align: center; 
+    width: 100%;   
+   }
+
