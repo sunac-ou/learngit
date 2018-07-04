@@ -9,6 +9,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	
 }
 
 .warp {
@@ -16,13 +17,18 @@
 	background-color: #1d7ad9;
 	line-height: 3rem;
 	color: #FFF;
+	width: 100%;
 }
 
 .warp .row {
+	display: flex;
+	justify-content: space-between;
 	height: 3rem;
+	
 }
 .warp .container {
 	height: 3rem;
+	width: 100%;
 }
 
 
@@ -109,7 +115,7 @@
 	width: 70%;
 	height: 4rem;
 	background-color: #FFF;
-	border-radius: 10%;
+	border-radius: 1rem;
 	
 }
 
@@ -126,7 +132,7 @@
 
 .warp-module {
 	width: 100%;
-	height: 17rem;
+	height: 9rem;
 	margin-left: 40%;
 }
 
@@ -150,13 +156,24 @@
 	
 }
 
-.module-1 span {
-	position: absolute;
-	color: #FFF;
+.module-2 span {
+ 	display: inline-block;
+ 	position: absolute;
+ 	width: 50px;
+ 	height: 50px;
+ 	margin-top: -13px;
+ 	margin-left: -25px;
+ 	color: #FFF;
 }
+
+
 .module-2 {
+	width: 100%;
+	height: 100%;
 	background: #cccccc;
 	border-radius:60px; width:280px; height:10px;
+	line-height: 2rem;
+
 }
 
 .module-2::before{
@@ -176,11 +193,10 @@
 
 
 .text-1 {
-	width: 25%;
-	height: 3rem;
-	text-align: center;
-	
-	color: #cccccc;
+position: absolute;
+  margin: 5rem 0;
+  font-size: 1.2rem;
+  color: #ccc;
 }
 
 
@@ -191,7 +207,7 @@
 	background-color: #ff7f02;
 }
 
-.module-1:hover+.text-1{
+.module-2:hover+.text-1{
 	color: #ff7f02;
 }
 
@@ -255,6 +271,7 @@ form div {
 	height: 20px;
 	border: 1px solid #CCC;
 	border-radius: 50%;
+	margin-right: .5rem;
 }
 
 .box-1:after {
@@ -286,7 +303,7 @@ form div {
 }
 
 select {
-
+border-style: solid;
   /*很关键：将默认的select选择框样式清除*/
   appearance:none;
   -moz-appearance:none;
@@ -329,6 +346,8 @@ input[type="radio"]:checked+.box-1{
     border-color: #d7d7d7;
 }
 
+
+
 .chart-2 {
 	
 	height: 10rem;
@@ -345,15 +364,25 @@ input[type="radio"]:checked+.box-1{
 	height: 5rem;
 	width: 14%;
 	margin-left: 5%;
+	z-index: 1;
 }
 
 
 
 .warp-text {
-	width:81%;
+
+	width:66%;
 	height: 5rem;
 	
 }
+
+.warp-text-1 {
+
+	width:66%;
+	height: 5rem;
+	
+}
+
 
 .text-2 {
 	height: 100%;
@@ -376,12 +405,10 @@ input[type="radio"]:checked+.box-1{
 
 
 .form-group-2 {
-	width: 95%;
-	height: 100%;
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-top:-10rem;
+	width: 15%;
+	height: 100%;
+	margin-top: -1rem;
 
 }
 
@@ -460,7 +487,7 @@ input[type="radio"]:checked+.box-1{
 
 	display: inline-block;
 	padding-top: 4rem;
-	width:350px;
+	width:100%;
 	height: 100%;
 	text-align: left;
 	vertical-align: middle;
@@ -535,11 +562,13 @@ input[type="radio"]:checked+.box-1{
 	.nav-2 span {
 	
 	width: 30%;
+	margin-top: .5rem;
 }
 
 }
 
-  @media all and (min-width: 1000px) {.btn1 {
+  @media all and (min-width: 1000px) {
+  	.btn1 {
          display: none !important;  
       }
 
@@ -550,19 +579,22 @@ input[type="radio"]:checked+.box-1{
      .none-1 {
       	display: block;
       }
+
+
+
 }
 
 
 @media all and (max-width: 1200px) {
 	.progress {
-	height: 18rem;
+	height: 9rem;
 }
 	.warp-module {
 	margin-left: 0%;
 }
 
 .module {
-	width: 50%;
+	width: 25%;
 }
 
 .chart {
@@ -618,8 +650,6 @@ label div:first-child {
 
 .form-group-2 {
 	width: 100%;
-	
-	
 	justify-content: center;
 	align-items: center;
 	margin-top:0rem;
@@ -633,12 +663,24 @@ label div:first-child {
 	
 }
 
+
 .warp-text {
 	
 	height: 9rem;
 	width:100%;
 	justify-content: center;
 }
+
+.warp-text-1 {
+	
+	height: 9rem;
+	width:100%;
+	justify-content: center;
+}
+
+
+
+
 
 .chart-2 {
 	
@@ -651,9 +693,13 @@ label div:first-child {
 	justify-content: center;
 }
 
+.text-1 {
+
+  font-size: 1rem;
+ 
+}
+
 	
-
-
 	 
 }
 
@@ -667,11 +713,3 @@ label div:first-child {
 
 }
 
-@media all and (max-width: 436px) {
-
-	.warp span:first-child {
-		color:#1d7ad9;
-	}
-
-
-}

@@ -1,0 +1,149 @@
+//body设置
+$max-width:100%;
+$min:0;
+$body-backround:#eff0f4;
+//头部设置
+$header-height:5rem;
+$header-backround:#5fc0cd;
+$a-padding:2rem;
+$header-a-fontsize:1.3rem;
+$header-span-fontsize:1.6rem;
+$header-span-color:#FFF;
+@mixin display-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+//主体设置
+$main-height:11.5rem;
+$name-top:1rem;
+$name-height:4rem;
+@mixin display-items {
+	display: flex;
+	align-items: center;
+}
+$name-backround:#FFF;
+$margin-left:20px;
+$span-height:3rem;
+$span-color:#CCC;
+$input-height:3.6rem;
+$none:none;
+$input-color:#cdcfd0;
+$opacity:1;
+$input-size:1rem;
+$input-width:100px;
+//底部设置
+$footer-height:8rem;
+@mixin display-end{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+@mixin display-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+	margin:$min;
+	padding:$min;
+	background-color:$body-backround;
+}
+
+header {
+	@include display-between;
+	width:$max-width;
+	height:$header-height;
+	background-color:$header-backround;
+
+	a {
+		padding:$a-padding;
+		font-size:$header-a-fontsize;
+	}
+
+	span {
+		font-size:$header-span-fontsize;
+		color:$header-span-color;
+
+	}
+
+}
+
+main {
+	height:$main-height;
+}
+
+.name {
+	margin-top:$name-top;
+	height:$name-height;
+	width:$max-width;
+	@include display-items;
+	background-color:$name-backround;
+}
+
+.iphone {
+	@include display-center;
+	height:$a-padding;
+	width:$input-width;
+	span {
+		margin-left:$margin-left;
+		height:$span-height;
+		font-size:$a-padding;
+		color:$span-color;
+	}
+}
+
+input {
+	width:max-width;
+	height:$input-height;
+	border:$none;
+}
+
+
+footer {
+	height:$footer-height;
+	width:$max-width;
+	span{
+		height:$span-height;
+		width:$max-width;
+		font-size:$header-a-fontsize;
+		@include display-end;
+	}
+	
+}
+
+.warp {
+	height:$header-height;
+	width:$max-width;
+	background-color:$header-backround;
+	@include display-center;
+	font-size:$header-span-fontsize;
+
+	
+}
+
+a {
+	text-decoration:$none;
+
+}
+
+a:link {color: $header-span-color;}		
+a:visited {color: $header-span-color;}	
+.warp a:link {color: $header-span-color;}		
+.warp a:visited {color: $header-span-color;}	
+footer a:link {color: $header-backround;}
+footer a:visited {color: $header-backround;}
+
