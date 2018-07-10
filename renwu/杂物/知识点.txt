@@ -111,3 +111,114 @@ display:none有很强的的株连性，父级一旦设置，其余子级都会消失不见，无解。
 
 visibility:hidden 伪株连性，父级设置后，子级会消失不见。但如果子级设置visibility:visible则可以免受父级株连。
 
+2018/6/11 
+
+做任务10头部时
+1.
+发现hover伪类无法实现子盒子里的字体颜色设置
+未找到解决办法
+2.
+a:link {color: #FF0000}		/* 未访问的链接 */
+a:visited {color: #00FF00}	/* 已访问的链接 */
+a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+a:active {color: #0000FF}	/* 选定的链接 */
+3.
+设置网址无下划线:text-decoration:none;;
+4.
+ul和li去掉圆点
+.li和.ul下写入list-sytle:none
+5.
+当无法设置高度宽度时 加个flex属性可以设置
+
+2018.7.4
+1.
+设置input内默认显示文字颜色字体大小？
+input::-webkit-input-placeholder{
+    color: #cdcfd0;opacity:1;
+    font-size: 1rem;
+}
+
+2.
+输入框只能输入数字？
+
+
+3.
+输入框输入字数限制？
+maxlength="value"
+value设置任意数字
+
+4.
+输入框输入密码
+
+type="password"
+
+2018.7.7
+1.
+koala自动翻译时显示“预期结束“错误，
+经检查发现是sass文件中有空格，结尾无分号。
+对于Sass语法，您需要删除空格: nth-child)，最好;在每个属性的末尾添加分号
+对于Scss语法，您还需要添加大括号
+！！！！！现在常用的一般是scss，和css大概类似，so，用了后缀名sass产生错误！！！！！！！！！
+
+2.
+文本怎么设置居中
+text-align：center
+margin：auto；
+
+2018.7.8
+1.几种盒子垂直居中的办法，
+1：定位
+
+*{margin:0;padding: 0;}	
+.container {height: 30rem;width: 30rem;background: black;position: relative;}
+.content {height: 15rem;width:20rem;background: #FFF;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+
+
+2:margin
+
+*{margin:0;padding: 0;}
+.container {height: 30rem;width: 30rem;background: black;position: relative;}
+.content {height: 15rem;width:20rem;background: #FFF;position: absolute;top:0;left:0;right:0;bottom:0;margin: auto;}
+
+3:flex
+
+*{margin:0;padding: 0;}
+.container {height: 30rem;width: 30rem;background: black;display: flex;justify-content: center;align-items: center;}
+.content {height: 15rem;width:20rem;background: #FFF;}
+
+4:padding
+
+*{margin:0;padding: 0;}
+.container {padding:7.5rem 0;width: 30rem;background: black;}
+.content {height: 15rem;width:20rem;background: #FFF;margin: 0 auto;}
+
+2.几种文本居中的方法
+
+1.
+*{margin:0;padding: 0;}
+.container {margin:10%;height:15rem;width: 30rem;border:1px solid black;background: #fff;line-height: 15rem;text-align: center;}
+
+2.
+按钮选中的状态改变
+.btn-r:focus{
+    position: relative;
+    box-shadow: inset 0 3px 5px 0 rgba(0,0,0, 0.2);
+    outline: 0;
+}
+
+2018.7.9
+1.
+绝对定位
+position:flexd;
+
+2.
+hover效果
+父元素（选择器）:hover 子元素（选择器）｛
+｝
+
+
+
+
+
+
+

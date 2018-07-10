@@ -1,0 +1,29 @@
+sass£º
+@mixin task12{background:url(/task12.png) no-repeat; }
+@mixin xuanzhekuang{height:8px;width:13px;background-position: 0 0;}
+@mixin next{height:33px;width:19px;background-position: -13px 0;}
+@mixin xiaozuobiao{height:23px;width:19px;background-position: -32px 0;}
+@mixin back{height:37px;width:22px;background-position: -51px 0;}
+@mixin rili{height:24px;width:24px;background-position: -73px 0;}
+@mixin xingxinf{height:23px;width:24px;background-position: -97px 0;}
+@mixin jilu{height:41px;width:40px;background-position: -121px 0;}
+@mixin rentou{height:41px;width:42px;background-position: -161px 0;}
+@mixin dazuobiao{height:44px;width:42px;background-position: -203px 0;}
+@mixin home{height:40px;width:46px;background-position: -245px 0;}
+@mixin touxiang{height:157px;width:114px;background-position: -291px 0;}
+@mixin beijing{height:667px;width:1000px;background-position: -405px 0;}
+
+css£º
+.task12{background:url(/task12.png)  no-repeat;}
+.xuanzhekuang{height:8px;width:13px;background-position:0 0;}
+.next{height:33px;width:19px;background-position:-13px 0;}
+.xiaozuobiao{height:23px;width:19px;background-position:-32px 0;}
+.back{height:37px;width:22px;background-position:-51px 0;}
+.rili{height:24px;width:24px;background-position:-73px 0;}
+.xingxinf{height:23px;width:24px;background-position:-97px 0;}
+.jilu{height:41px;width:40px;background-position:-121px 0;}
+.rentou{height:41px;width:42px;background-position:-161px 0;}
+.dazuobiao{height:44px;width:42px;background-position:-203px 0;}
+.home{height:40px;width:46px;background-position:-245px 0;}
+.touxiang{height:157px;width:114px;background-position:-291px 0;}
+.beijing{height:667px;width:1000px;background-position:-405px 0;}
