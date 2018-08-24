@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*字体*/
+@mixin f13{font-size:13px}
+@mixin f14{font-size:14px}
+@mixin f16{font-size:16px}
+@mixin f18{font-size:18px}
+@mixin f20{font-size:20px}
+@mixin fb{font-weight:700}
+@mixin fn{font-weight:400}
+/*文本调整*/
+@mixin t2{text-indent:2em}
+@mixin lh150{line-height:150%}
+@mixin lh180{line-height:180%}
+@mixin lh200{line-height:200%}
+@mixin unl{text-decoration:underline}
+@mixin no_unl{text-decoration:none}
+@mixin tl{text-align:left}
+@mixin tr{text-align:right}
+@mixin tc{text-align:center}
+/*布局*/
+@mixin bc{margin-left:auto;margin-right:auto}
+@mixin fl{float:left;display:inline}
+@mixin fr{float:right;display:inline}
+@mixin pr{position:relative}
+@mixin pa{position:absolute}
+@mixin pf{position:flexd}
+@mixin abs-right{position:absolute;right:0}
+@mixin hidden{visibility:hidden}
+@mixin vm{vertical-align:middle}
+
+/*浮动*/
+.cb{clear:both}
+.cl{clear:left}
+.cr{clear:right}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+html.clearfix{height:1%}
+.Clearfix{display:block}
+
+/*元素属性*/
+.none{display:none}
+
+/*宽度*/
+@mixin w10{width:10px}
+@mixin w20{width:20px}
+@mixin w{width:100%}
+
+/*高度*/
+@mixin h10{height:10px}
+@mixin h20{height:20px}
+@mixin h{height:100%}
+

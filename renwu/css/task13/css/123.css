@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*字体*/
+/*文本调整*/
+/*布局*/
+/*浮动*/
+.cb {
+  clear: both; }
+
+.cl {
+  clear: left; }
+
+.cr {
+  clear: right; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+html.clearfix {
+  height: 1%; }
+
+.Clearfix {
+  display: block; }
+
+/*元素属性*/
+.none {
+  display: none; }
+
+/*宽度*/
+/*高度*/
+
+/*# sourceMappingURL=123.css.map */

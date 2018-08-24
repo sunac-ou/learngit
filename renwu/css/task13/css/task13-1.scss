@@ -1,0 +1,135 @@
+@charset "utf-8";
+/*字体*/
+@mixin f13{font-size:13px}
+@mixin f14{font-size:14px}
+@mixin f16{font-size:16px}
+@mixin f18{font-size:18px}
+@mixin f20{font-size:20px}
+@mixin fb{font-weight:700}
+@mixin fn{font-weight:400}
+/*文本调整*/
+@mixin t2{text-indent:2em}
+@mixin lh150{line-height:150%}
+@mixin lh180{line-height:180%}
+@mixin lh200{line-height:200%}
+@mixin unl{text-decoration:underline}
+@mixin no_unl{text-decoration:none}
+@mixin tl{text-align:left}
+@mixin tr{text-align:right}
+@mixin tc{text-align:center}
+/*布局*/
+@mixin bc{margin-left:auto;margin-right:auto}
+@mixin fl{float:left;display:inline}
+@mixin fr{float:right;display:inline}
+@mixin pr{position:relative}
+@mixin pa{position:absolute}
+@mixin pf{position:fixed}
+@mixin abs-right{position:absolute;right:0}
+@mixin hidden{visibility:hidden}
+@mixin vm{vertical-align:middle}
+@mixin dc{display: flex;align-items: center;justify-content: center;}
+@mixin dl{display: flex;align-items: center;justify-content: flex-start;}
+@mixin dr{display: flex;align-items: center;justify-content: flex-end;}
+
+
+/*浮动*/
+@mixin cb{clear:both}
+@mixin cl{clear:left}
+@mixin cr{clear:right}
+@mixin clearfix{display:inline-block;height:1%}
+
+/*元素属性*/
+@mixin none{display:none}
+
+/*宽度*/
+@mixin w10{width:10px}
+@mixin w20{width:20px}
+@mixin w{width:100%}
+
+/*高度*/
+@mixin h10{height:10px}
+@mixin h20{height:20px}
+@mixin h{height:100%}
+
+/*背景颜色*/
+@mixin bg{background-color:#29bde0;}
+
+body{
+	background-color:#f0f0f0;
+}
+
+
+.menu-list {
+  float: left;
+  width: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: ease 500ms; }
+
+.menu-list .sidebar {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-right: 5px solid #29bde0; }
+
+.menu-item {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: sans-serif;
+  line-height: 48px;
+  color: #29bde0;
+  border-bottom: 1px solid #ddd;
+  text-indent: 1em;
+  vertical-align: center;
+  white-space: nowrap; }
+
+.menu-item:hover {
+  background-color: rgba(41, 189, 224, 0.5); }
+
+.menu-item img {
+  position: relative;
+  top: 13px;
+  margin-right: 10px;
+  border-radius: 50%; }
+
+.menu-item:after {
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 10px;
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-top-color: #29bde0;
+  border-right-color: #29bde0;
+  transform: rotateZ(45deg); }
+
+.wrapper {
+  width: 100%;
+  height: 540px;
+  transition: transform 500ms; }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 110%;
+  padding-left:1%;
+  height: 43px;
+  background-color: #29bde0; }
+
+.menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 25px;
+  height: 24px;
+  background: url(./img/Task7.png) no-repeat 4px 5px;
+  -webkit-background-size: 225px 150px;
+  background-size: 225px 150px; }
+
+

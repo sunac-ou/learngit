@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 header {
   position: fixed;
@@ -12,8 +11,7 @@ header {
   height: 6rem;
   background: #5fc0cd;
   width: 100%;
-  z-index: 1;
-}
+  z-index: 1; }
 
 .btn-l {
   height: 4rem;
@@ -23,14 +21,12 @@ header {
   color: #FFF;
   overflow: hidden;
   box-sizing: border-box;
-  border: none;
-}
+  border: none; }
 
 .btn-l:focus {
   position: relative;
   box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  outline: 0;
-}
+  outline: 0; }
 
 .btn-r {
   height: 4rem;
@@ -41,14 +37,12 @@ header {
   margin-left: -2rem;
   overflow: hidden;
   box-sizing: border-box;
-  border: none;
-}
+  border: none; }
 
 .btn-r:focus {
   position: relative;
   box-shadow: inset 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  outline: 0;
-}
+  outline: 0; }
 
 .dazuobiao {
   background: url(task12.png) no-repeat;
@@ -57,13 +51,11 @@ header {
   background-position: -203px 0;
   transform: scale(0.7);
   position: absolute;
-  margin-left: 40%;
-}
+  margin-left: 40%; }
 
 main {
   margin-top: 6rem;
-  margin-bottom: 9rem;
-}
+  margin-bottom: 9rem; }
 
 .bar {
   height: 5rem;
@@ -72,36 +64,28 @@ main {
   align-items: center;
   justify-content: space-around;
   border-bottom: 1px solid #e8e8e8;
-  color: #afbac0;
-}
-.bar .bar-left {
-  width: 30%;
-  text-align: center;
-}
-.bar .bar-left span {
-  display: inline-block;
-  width: 70%;
-}
-.bar .bar-center {
-  width: 30%;
-  text-align: center;
-}
-.bar .bar-center span {
-  display: inline-block;
-  width: 70%;
-}
-.bar .bar-right {
-  width: 30%;
-  text-align: center;
-}
-.bar .bar-right span {
-  display: inline-block;
-  width: 70%;
-}
-.bar span {
-  width: 5%;
-  text-align: center;
-}
+  color: #afbac0; }
+  .bar .bar-left {
+    width: 30%;
+    text-align: center; }
+    .bar .bar-left span {
+      display: inline-block;
+      width: 70%; }
+  .bar .bar-center {
+    width: 30%;
+    text-align: center; }
+    .bar .bar-center span {
+      display: inline-block;
+      width: 70%; }
+  .bar .bar-right {
+    width: 30%;
+    text-align: center; }
+    .bar .bar-right span {
+      display: inline-block;
+      width: 70%; }
+  .bar span {
+    width: 5%;
+    text-align: center; }
 
 .folat {
   display: none;
@@ -111,13 +95,11 @@ main {
   height: 6rem;
   border-bottom: 1px solid #e8e8e8;
   background: #CCC;
-  color: #000;
-}
-.folat div {
-  height: 2rem;
-  width: 100%;
-  border-top: 1px solid #e8e8e8;
-}
+  color: #000; }
+  .folat div {
+    height: 2rem;
+    width: 100%;
+    border-top: 1px solid #e8e8e8; }
 
 .folat-2 {
   display: none;
@@ -127,13 +109,11 @@ main {
   height: 4rem;
   border-bottom: 1px solid #e8e8e8;
   background: #CCC;
-  color: #000;
-}
-.folat-2 div {
-  height: 2rem;
-  width: 100%;
-  border-top: 1px solid #e8e8e8;
-}
+  color: #000; }
+  .folat-2 div {
+    height: 2rem;
+    width: 100%;
+    border-top: 1px solid #e8e8e8; }
 
 .folat-3 {
   display: none;
@@ -144,69 +124,57 @@ main {
   border-bottom: 1px solid #e8e8e8;
   background: #CCC;
   color: #000;
-  z-index: 1;
-}
-.folat-3 div {
-  height: 2rem;
-  width: 100%;
-  border-top: 1px solid #e8e8e8;
-}
+  z-index: 1; }
+  .folat-3 div {
+    height: 2rem;
+    width: 100%;
+    border-top: 1px solid #e8e8e8; }
 
 .bar-left:hover .folat {
-  display: block;
-}
+  display: block; }
 
 .bar-center:hover .folat-2 {
-  display: block;
-}
+  display: block; }
 
 .bar-right:hover .folat-3 {
-  display: block;
-}
+  display: block; }
 
 .content {
   height: 9rem;
   width: 100%;
-  border-bottom: 1px solid #e8e8e8;
-}
+  border-bottom: 1px solid #e8e8e8; }
 
 .content-top {
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-}
-.content-top span {
-  margin-left: 1rem;
-  color: #afbac0;
-}
+  justify-content: flex-start; }
+  .content-top span {
+    margin-left: 1rem;
+    color: #afbac0; }
 
 .rili {
   background: url(task12.png) no-repeat;
   height: 24px;
   width: 24px;
   background-position: -73px 0;
-  margin-left: 1rem;
-}
+  margin-left: 1rem; }
 
 .content-center {
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-}
+  justify-content: flex-start; }
 
 .right {
   margin-left: 3.4rem;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .center {
   position: absolute;
   margin-left: 70%;
   color: red;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .next {
   background: url(task12.png) no-repeat;
@@ -214,16 +182,14 @@ main {
   width: 19px;
   background-position: -13px 0;
   position: absolute;
-  margin-left: 92%;
-}
+  margin-left: 92%; }
 
 .xiaozuobiao {
   background: url(task12.png) no-repeat;
   height: 23px;
   width: 19px;
   background-position: -32px 0;
-  margin-left: 1rem;
-}
+  margin-left: 1rem; }
 
 footer {
   position: fixed;
@@ -234,14 +200,12 @@ footer {
   justify-content: space-around;
   height: 6rem;
   width: 100%;
-  background: #f8fafb;
-}
+  background: #f8fafb; }
 
 .footer-left {
   width: 30%;
   height: 6rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .home {
   background: url(task12.png) no-repeat;
@@ -249,16 +213,14 @@ footer {
   width: 46px;
   background-position: -245px 0;
   transform: scale(0.7);
-  margin: 1rem auto;
-}
+  margin: 1rem auto; }
 
 .footer-center {
   height: 3rem;
   width: 30%;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .footer-center > :first-child {
   display: flex;
@@ -267,8 +229,7 @@ footer {
   width: 4rem;
   height: 4rem;
   background: #5fc0cd;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .jilu {
   background: url(task12.png) no-repeat;
@@ -277,14 +238,12 @@ footer {
   background-position: -121px 0;
   transform: scale(0.7);
   margin-top: -.3rem;
-  margin-left: .2rem;
-}
+  margin-left: .2rem; }
 
 .footer-right {
   width: 30%;
   height: 6rem;
-  text-align: center;
-}
+  text-align: center; }
 
 .rentou {
   background: url(task12.png) no-repeat;
@@ -292,27 +251,21 @@ footer {
   width: 42px;
   background-position: -161px 0;
   transform: scale(0.7);
-  margin: 1rem auto;
-}
+  margin: 1rem auto; }
 
 .footer-left a:link {
-  color: #5fc0cd;
-}
+  color: #5fc0cd; }
 
 .footer-left a:visited {
-  color: #5fc0cd;
-}
+  color: #5fc0cd; }
 
 .footer-right a:link {
-  color: #999;
-}
+  color: #999; }
 
 .footer-right a:visited {
-  color: #999;
-}
+  color: #999; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /*# sourceMappingURL=task12-2.css.map */

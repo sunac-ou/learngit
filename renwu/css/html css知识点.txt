@@ -216,6 +216,17 @@ hover效果
 父元素（选择器）:hover 子元素（选择器）｛
 ｝
 
+2018.7.14
+1.
+手机网页自适应
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+2018.7.24
+1.写下一步按钮
+ transform: rotateZ(45deg);
+2.渐缓界面
+transition: transform 500ms; 
+3.
 
 
 

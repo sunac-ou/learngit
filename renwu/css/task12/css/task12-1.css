@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Microsoft FangSong_GB2312";
-}
+  font-family: "Microsoft FangSong_GB2312"; }
 
 header {
   height: 18rem;
-  width: 100%;
-}
+  width: 100%; }
 
 .header-top {
   display: flex;
@@ -15,29 +13,24 @@ header {
   justify-content: flex-start;
   height: 3rem;
   background-color: #5fc0cd;
-  width: 100%;
-}
-.header-top a {
-  position: absolute;
-  margin-left: 2rem;
-}
-.header-top span {
-  margin: auto;
-  color: #FFF;
-  font-size: 1.5rem;
-}
+  width: 100%; }
+  .header-top a {
+    position: absolute;
+    margin-left: 2rem; }
+  .header-top span {
+    margin: auto;
+    color: #FFF;
+    font-size: 1.5rem; }
 
 .back {
   background: url(task12.png) no-repeat;
   height: 37px;
   width: 22px;
-  background-position: -51px 0;
-}
+  background-position: -51px 0; }
 
 .header-bootom {
   height: 15rem;
-  width: 100%;
-}
+  width: 100%; }
 
 .beijing {
   display: flex;
@@ -47,45 +40,37 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  padding-left: 2rem;
-}
-.beijing span {
-  color: #FFF;
-  font-size: 1.1rem;
-  line-height: 3rem;
-  margin-left: 1rem;
-}
-.beijing div > :first-child {
-  font-size: 1.4rem;
-}
+  padding-left: 2rem; }
+  .beijing span {
+    color: #FFF;
+    font-size: 1.1rem;
+    line-height: 3rem;
+    margin-left: 1rem; }
+  .beijing div > :first-child {
+    font-size: 1.4rem; }
 
 .dizhi {
   font-size: .3rem;
-  margin-left: -.3rem;
-}
+  margin-left: -.3rem; }
 
 .main {
   height: 60rem;
-  width: 100%;
-}
+  width: 100%; }
 
 .main-1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 5rem;
-  border-bottom: 1px solid #e8e8e8;
-}
-.main-1 span {
-  margin-left: 1rem;
-  font-size: 1.2rem;
-}
+  border-bottom: 1px solid #e8e8e8; }
+  .main-1 span {
+    margin-left: 1rem;
+    font-size: 1.2rem; }
 
 .main-1 > :first-child {
   color: #5fc0cd;
   font-size: 1.2rem;
-  margin-top: -.2rem;
-}
+  margin-top: -.2rem; }
 
 .main-2 {
   display: flex;
@@ -93,64 +78,53 @@ header {
   justify-content: flex-start;
   height: 5rem;
   border-bottom: 1px solid #e8e8e8;
-  height: 5rem;
-}
-.main-2 div {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.main-2 span {
-  padding: 0 .5rem;
-}
+  height: 5rem; }
+  .main-2 div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+  .main-2 span {
+    padding: 0 .5rem; }
 
 .xingxing {
   background: url(task12.png) no-repeat;
   height: 23px;
   width: 24px;
   background-position: -97px 0;
-  margin-left: 1rem;
-}
+  margin-left: 1rem; }
 
 .main-3 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   height: 5rem;
-  border-bottom: 1px solid #e8e8e8;
-}
+  border-bottom: 1px solid #e8e8e8; }
 
 .main-3 > :first-child {
   margin-left: 1rem;
-  color: #a0a0a0;
-}
+  color: #a0a0a0; }
 
 .center {
-  margin: 0 1rem;
-}
+  margin: 0 1rem; }
 
 .red {
   color: red;
-  font-size: 1.5rem;
-}
+  font-size: 1.5rem; }
 
 .right {
   position: absolute;
-  margin-left: 7rem;
-}
+  margin-left: 7rem; }
 
 footer {
   height: 10rem;
-  width: 100%;
-}
+  width: 100%; }
 
 footer > :first-child {
   height: 6rem;
   padding-top: 4rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
 
 .footer-left {
   width: 40%;
@@ -161,8 +135,7 @@ footer > :first-child {
   margin-left: 5%;
   border-radius: 1rem;
   color: #5fc0cd;
-  border: 2px solid #5fc0cd;
-}
+  border: 2px solid #5fc0cd; }
 
 .footer-right {
   width: 40%;
@@ -173,7 +146,6 @@ footer > :first-child {
   margin-right: 5%;
   border-radius: 1rem;
   background: #5fc0cd;
-  color: #FFF;
-}
+  color: #FFF; }
 
 /*# sourceMappingURL=task12-1.css.map */

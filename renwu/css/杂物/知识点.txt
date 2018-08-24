@@ -1,0 +1,235 @@
+把自己学到的任务知识点记录下来
+有自己的理解加到后面
+2018-5-16
+
+基本 
+1.使用ul标签时
+
+可以使用list-style-type:  none去掉列表前面的小圆点
+
+媒体查询专栏
+1. True 对 
+   False 错
+
+2.@meadia all（媒体类型） and（逻辑操作符） ｛max-width:1000px｝（媒体特性）
+最大宽度1000px等于:小于等于1000px才引用
+这里理解老是有误区上面，上面代码｛max-width:1000px｝表面意思是宽度最大等于1000px
+但是引用到网页上要理解为宽度小于等于1000px才引用，意思是一样的，只是反过来而已。
+min:最小
+max:最大
+
+3：媒体类型：all（全部）,screen（屏幕）,print（页面打印或打邱预览模式）
+逻辑操作符：
+媒体特性：
+4：min:最小
+   max:最大
+
+5：媒体查询的引用
+推荐两种：1，<link rel="stylesheet" type="text/css" href="../css/print.css" media="print" />
+             （引用外联式css 把媒体查询写在其他媒体查询专用css上）
+             <link rel="stylesheet" media="screen and (max-width: 600px)" href="small.css" />
+          当screen（屏幕）小于或等于600px时，将采用small.css样式来渲染Web页面。
+          2，<head>
+            <style type="text/css">
+            @import url("css/style.css") all;
+            </style>
+            </head>  （在头部html中引用）
+媒体类型：1,all(所有配置)
+          2.screen(手机，平板，电脑屏幕)
+          3,print(打印机)
+逻辑操作符：：逻辑判断符：
+           1:and(并且）
+           2：, (or)（或）
+
+2018-5-21
+
+1.content: "";有什么用？
+  content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容。
+ 好像还有撑开属性功能 目前无法理解 代码如下
+ 这段代码中的content: ".";有什么用，解决了什么问题，为什么要用他？
+ .clearfix:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+strivelifetime | 浏览 28718 次 |举报
+我有更好的答案
+推荐于2017-09-30 10:43:11 最佳答案
+在写HTML代码的时候，发现在Firefox等符合W3C标准的浏览器中，
+如果有一个DIV作为外部容器，内部的DIV如果设置了float样式，
+则外部的容器DIV因为内部没有clear，导致不能被撑开。
+这个clearfix的CSS使用了after这个伪对象，
+它将在应用clearfix的元素的结尾添加content中的内容。
+在这里添加了一个句号"."，并且把它的display设置成block；
+高度设为0；clear设为both；visibility设为隐藏。这样就达到了撑开容器的目的啦。
+
+2.如何在内容宽度超过100%后自动换行？
+  在属性里添加word-wrap:break-word; word-break:break-all;这行代码即可
+  word-wrap：允许长单词换行到下一行
+  word-break：在恰当的断字点进行换行
+3.:样式::before {属性｝
+
+before 选择器在被选元素的内容前面插入内容。
+
+请使用 content 属性来指定要插入的内容。
+
+4：active 选择器
+
+定义和用法
+
+:active 选择器用于选择活动链接。
+
+当您在一个链接上点击时，它就会成为活动的（激活的）。
+
+提示：请使用 :link 选择器对指向未被访问页面的链接设置样式，
+
+:visited 用于设置指向已访问页面的链接的样式，
+
+:hover 选择器用于设置鼠标指针浮动到链接上时的样式。
+
+
+
+5.元素转换
+
+1.display:inline;转换为行内元素
+
+2.display:block;转换为块状元素
+
+3.display:inline-block;转换为行内块状元素
+
+6.display和visiblity有什么区别？
+
+display:none 可以让元素脱离文档流消失，原有的空间被折叠。
+
+visibility:hidden 可以让元素隐藏，但是依然会占据原来的文档流。
+
+就是displayde会回流与渲染，而visibility没有这个影响前端性能的问题。回流则是重新使该页面渲染一次，从而影响性能。渲染是浏览器处理的过程。
+
+display:none有很强的的株连性，父级一旦设置，其余子级都会消失不见，无解。
+
+visibility:hidden 伪株连性，父级设置后，子级会消失不见。但如果子级设置visibility:visible则可以免受父级株连。
+
+2018/6/11 
+
+做任务10头部时
+1.
+发现hover伪类无法实现子盒子里的字体颜色设置
+未找到解决办法
+2.
+a:link {color: #FF0000}		/* 未访问的链接 */
+a:visited {color: #00FF00}	/* 已访问的链接 */
+a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+a:active {color: #0000FF}	/* 选定的链接 */
+3.
+设置网址无下划线:text-decoration:none;;
+4.
+ul和li去掉圆点
+.li和.ul下写入list-sytle:none
+5.
+当无法设置高度宽度时 加个flex属性可以设置
+
+2018.7.4
+1.
+设置input内默认显示文字颜色字体大小？
+input::-webkit-input-placeholder{
+    color: #cdcfd0;opacity:1;
+    font-size: 1rem;
+}
+
+2.
+输入框只能输入数字？
+
+
+3.
+输入框输入字数限制？
+maxlength="value"
+value设置任意数字
+
+4.
+输入框输入密码
+
+type="password"
+
+2018.7.7
+1.
+koala自动翻译时显示“预期结束“错误，
+经检查发现是sass文件中有空格，结尾无分号。
+对于Sass语法，您需要删除空格: nth-child)，最好;在每个属性的末尾添加分号
+对于Scss语法，您还需要添加大括号
+！！！！！现在常用的一般是scss，和css大概类似，so，用了后缀名sass产生错误！！！！！！！！！
+
+2.
+文本怎么设置居中
+text-align：center
+margin：auto；
+
+2018.7.8
+1.几种盒子垂直居中的办法，
+1：定位
+
+*{margin:0;padding: 0;}	
+.container {height: 30rem;width: 30rem;background: black;position: relative;}
+.content {height: 15rem;width:20rem;background: #FFF;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+
+
+2:margin
+
+*{margin:0;padding: 0;}
+.container {height: 30rem;width: 30rem;background: black;position: relative;}
+.content {height: 15rem;width:20rem;background: #FFF;position: absolute;top:0;left:0;right:0;bottom:0;margin: auto;}
+
+3:flex
+
+*{margin:0;padding: 0;}
+.container {height: 30rem;width: 30rem;background: black;display: flex;justify-content: center;align-items: center;}
+.content {height: 15rem;width:20rem;background: #FFF;}
+
+4:padding
+
+*{margin:0;padding: 0;}
+.container {padding:7.5rem 0;width: 30rem;background: black;}
+.content {height: 15rem;width:20rem;background: #FFF;margin: 0 auto;}
+
+2.几种文本居中的方法
+
+1.
+*{margin:0;padding: 0;}
+.container {margin:10%;height:15rem;width: 30rem;border:1px solid black;background: #fff;line-height: 15rem;text-align: center;}
+
+2.
+按钮选中的状态改变
+.btn-r:focus{
+    position: relative;
+    box-shadow: inset 0 3px 5px 0 rgba(0,0,0, 0.2);
+    outline: 0;
+}
+
+2018.7.9
+1.
+绝对定位
+position:flexd;
+
+2.
+hover效果
+父元素（选择器）:hover 子元素（选择器）｛
+｝
+
+2018.7.14
+1.
+手机网页自适应
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+2018.7.24
+1.写下一步按钮
+ transform: rotateZ(45deg);
+2.渐缓界面
+transition: transform 500ms; 
+3.
+
+
+
+
+
+
