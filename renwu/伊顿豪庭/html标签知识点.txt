@@ -1,0 +1,283 @@
+1、最基本的HTML结构
+
+<!--<!DOCTYPE> 是HTML5声明，<!DOCTYPE> 必须是 HTML 文档的第一行，位于 <html> 标签之前。<!DOCTYPE>是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。-->
+
+<!DOCTYPE html>
+
+<html>
+
+<!-- head标签是所有头部元素的容器。head标签内的元素可包含脚本、样式表和提供页面的元信息等等。以下标签都可以添加到 head 部分：title、base、link、meta、script 以及style。头部的内容不会显示在浏览器的。 -->
+
+<head>
+
+<!-- 设置字符集，如果字符集不对，可能导致乱码。一般建议utf-8国际编码 -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312或utf-8或gbk" />
+
+<!-- SEO相关标签，title定义文档的标题,百度建议一般不要超过32位,meta定义页面关键词和页面的描述-->
+
+<title>网页标题</title>
+
+<meta name="keywords" content="PHP程序员,技术博客,个人博客,雷雪松" />
+
+<meta name="description" content="PHP程序员，雷雪松（Raykaeso）的博客是一个优秀的个人技术博客。PHP程序员雷雪松的博客记录了Linux学习，PHP开发与编程，Web前端开发，MySQL学习和教程，NoSQL数据库教程以及个人的人生经历和观点。" />
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<script type="text/javascript" src="main.js"></script>
+
+</head>
+
+<!-- 正文部分，所有在浏览器上可见的内容必须写在body标签内部 -->
+
+<body>
+
+</body>
+
+</html>
+2、最常用的HTML标签
+
+a、布局标签
+
+div标签定义文档中的分区或节（division/section），可以把文档分割为独立的、不同的部分，主要用于布局。
+
+aside标签的内容可用作文章的侧栏，<span style="color: #ff0000;">html5新增标签</span>。
+
+header标签定义页面的头部（介绍信息），<span style="color: #ff0000;">html5新增标签</span>。
+
+section标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分，<span style="color: #ff0000;">html5新增标签</span>。
+
+footer 标签定义文档或节的页脚，通常包含文档的作者、版权信息、使用条款链接、联系信息等等，<span style="color: #ff0000;">html5新增标签</span>。
+
+article标签规定文章独立的其他内容，比如：标题、内容、评论，<span style="color: #ff0000;">html5新增标签</span>。
+
+b、文本标签
+
+h1-h6标签可定义标题
+
+p标签定义段落
+
+b/strong标签加粗
+
+em标签来表示强调的文本，斜体
+
+strong标签表示重要文本
+
+u标签下划线
+
+s标签删除线
+
+br标签表示回车换行
+
+hr标签表示水平线
+
+span标签被用来组合文档中的行内元素。
+
+blockquote标签表示块引用
+
+pre标签可定义预格式化的文本，保持原有格式的一种标签。
+
+sub标签下标，
+
+sup>标签上标
+
+ 表示一个空格
+
+?表示版权符
+
+<表示<
+
+>表示>
+
+c、a标签定义超链接，指定页面间的跳转。链接可以指向外部链接或者页面内部id锚点，可以在当前页面打开，新开窗口。
+
+<a href="指向的链接地址或者网址#ID名" target="_blank|_self|_top|_parent">百度</a>
+
+d、多媒体标签
+
+img标签主要在网页中插入图像，可以定义图片替换文本、显示宽度和高度、是否带边框，建议等比例设置，否则图像会变形。
+
+<img src="图片地址" alt="替换文本，图片打不开的时候显示" width="图片宽度" height="高度" border="0" />
+
+audio标签定义声音，比如音乐或其他音频流。<span style="color: #ff0000;">html5新增标签</span>。
+
+<audio src="someaudio.wav">您的浏览器不支持 audio 标签。</audio>
+
+video标签定义视频，比如电影片段或其他视频流。<span style="color: #ff0000;">html5新增标签</span>。
+
+<video src="movie.ogg" controls="controls">您的浏览器不支持 video 标签。</video>
+
+e、序列化标签
+
+ul和li无序列表标签
+
+<ul>
+
+<li>HTML</li>
+
+<li>JS</li>
+
+<li>PHP</li>
+
+</ul>
+
+ol和li有序列表标签，可以使用type属性规定有序列表符号的类型。1 按数字有序排列，为默认值，（1、2、3、4）；a 按小写字母有序排列，（a、b、c、d）；A 按字母大写有序排列，（A、B、C、D）。i 按小写罗马字母有序，（i, ii, iii, iv）；I 按小写罗马字母有序，（I, II, III, IV）。
+
+<ol>
+
+<li>HTML</li>
+
+<li>JS</li>
+
+<li>PHP</li>
+
+</ol>
+
+dl标签定义了定义列表（definition list），dl标签用于结合 dt（定义列表中的项目）和 dd（描述列表中的项目）。
+
+<dl>
+
+<dt>计算机</dt>
+
+<dd>用来计算的仪器 ... ...</dd>
+
+</dl>
+
+f、表格标签
+
+table标签和tr标签，th标签和td标签，合并单元格。
+
+<table width="100%" height="193" border="1" cellpadding="0" cellspacing="0" bordercolor="#FF0000" bgcolor="#000000" background="">
+
+<tr>
+
+<th>标题</th>
+
+<th>标题</th>
+
+</tr>
+
+<tr>
+
+<!-- 合并横向单元格 -->
+
+<td colspan="2" nowrap="nowrap">&nbsp;</td>
+
+</tr>
+
+<tr>
+
+<td></td>
+
+<!-- 合并纵向单元格 -->
+
+<td rowspan="2"> </td>
+
+</tr>
+
+<tr>
+
+<td height="16"> </td>
+
+</tr>
+
+</table>
+
+g、表单标签
+
+form标签定义提交方式、提交地址、表单字符集以及如何对其进行编码，需要提交的表单一定要放在form标签内。
+
+<form id="form1" name="form1" method="post|get" enctype="multipart/form-data" action="提交到的地址"></form>
+
+input标签用于搜集用户信息
+
+<input name="userName" type="text" maxlength="5" size="100" value="asdfasdfasfd" />
+
+密码，输入的字符会被掩码（显示为星号或原点）
+
+<input name="pwd" type="password" maxlength="5" size="100" value="" />
+
+文件类型的表单，上传文件时，form表单一定要设置为enctype="multipart/form-data"
+
+<input type="file" name="file" />
+
+隐藏表单
+
+<input type="hidden" name="country" value="China" />
+
+提交
+
+<input type="submit" name="Submit" value="提交" disabled="disabled" />
+
+重置
+
+<input type="reset" name="Submit2" value="重置" />
+
+radio单选
+
+<input name="sex" type="radio" value="1" />男
+
+<input name="sex" type="radio" value="2" checked="checked" />女
+
+checkbox多选
+
+<input name="skill" type="checkbox" value="1" checked="checked" />PHP
+
+<input name="skill" type="checkbox" value="2" />前端
+
+<input name="skill" type="checkbox" value="2" />数据库
+
+<span style="color: #ff0000;">注：checked="checked"可以简写成checked</span>
+
+label标签为input元素定义标注，如果您点击label元素文本，就会触发此input控件。
+
+textarea标签，设置文本区内的可见行数和宽度
+
+<textarea name="content" cols="30" rows="10">大段文本输入框</textarea>
+
+button标签定义一个按钮
+
+提交按钮
+
+<button type="submit" value="提交">提交</button>
+
+重置按钮
+
+<button type="reset" value="重置">重置</button>
+
+select标签和option标签下拉列表
+
+单选菜单列表框
+
+<select name="user">
+
+<option value="1">ray</option>
+
+<option value="2" selected="selected">raykaeso</option>
+
+</select>
+
+多选列表下拉框，shift加鼠标单击，可以连续选择多个选择，CTRL+鼠标点击，可以点击多个。
+
+<select name="user" size="10" multiple="multiple">
+
+<option value="1">雷雪松</option>
+
+<option value="2" selected="selected">ray</option>
+
+<option value="3">raykaeso</option>
+
+</select>
+
+注:selected="selected"可简写成selected，表示选中
+3、其他HTML事项
+
+a、HTML标签和属性是不区分大小写的，建议HTML标签和属性都小写，属性值必须用双引号包围。
+
+b、HTML标签都是以开始标签起始，以结束标签终止。大部分HTML标签都是成对出现的，称为双标签，比如：p标签、div标签，也有的HTML标签在开始标签中结束的标签，称为单标签，比如：hr标签、br标签。大多数 HTML 元素可拥有属性，文本内容都是写在开始标签与结束标签之间。
+
+c、HTML标签之间尽量缩进与换行，每行代码不要过长，方便阅读和维护。
+
+d、HTML标签使用必须符合标签嵌套规则。禁止a标签嵌套a标签，p标签嵌套div标签。
+
+e、建议不使用HTML已经废弃的或者不赞成使用的标签，少使用table布局、iframe框架嵌套以及flash播放器。

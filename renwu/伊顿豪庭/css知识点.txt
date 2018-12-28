@@ -1,0 +1,8 @@
+2018.12.8
+1.
+一下代码是为了传统盒子宽度需要增加内边距和边框，输入以下代码宽度=内容+边框+内边距
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

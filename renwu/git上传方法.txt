@@ -1,0 +1,6 @@
+$ git status   //检查是否有可提交的文件
+$ git pull origin master // 提交之前可先更新一下，避免冲突发生(origin：远程仓库自定义名称 master：要提交的分支的名称)
+$ git add .    //添加所有可提交的文件
+（备注：$ git add <file>..  可只提交某个文件，用空格分割可以指定多个文件。）
+$ git commit -m "提交内容的注释"
+$ git push origin master  //提交所有更新文件(第一次提交时可用 git push -u origin master)

@@ -1,0 +1,102 @@
+2018.8.24
+1.
+直接在网页显示
+document.write(内容)
+2.
+弹窗显示
+alert(内容)
+3.
+问答 根据选择返回内容
+var ***=confirm("内容")
+4.
+输入框
+var ***=prompt（"默认显示值","输入框提示值"）
+5.
+任何感情，不去维护都会渐行渐远
+2018.10.16
+1.alert（“***”）警告
+2.window.close:关闭窗口
+3.window.open打开
+4.function：函数
+
+5.更改ID的内容
+var 变量名=document.gerElementById("ID名")获取ID名
+   document.write("原内容:"+变量名.innerHTML)输出原ID名的内容
+   变量名.innerHTML="更改的内容"   更改ID名的内容
+   document.write("更改的内容:"变量名,innerHTML)输出更改后的内容
+6.更改ID样式
+var 变量名=document.getElementById("ID名")获取ID名
+   变量名.style(设置).color(设置的样式)="样式内容"
+7.显示与隐藏
+显示:var 变量名=document.getElementById("ID名")获取ID名
+        ID名.style.display="block"
+隐藏:var 变量名=document.getElementById("ID名")获取ID名
+        ID名.style.display="none"
+8.函数绑定按钮
+function 变量名()
+{ 输出内容，可以是提问、直接输出、警告、确认、打开关闭窗口、其他很多功能}
+ <input type="button" name="button" onClick="变量名()" value="按钮显示的内容">
+9.更改绑定class
+var ID名=document.getElementById("ID名")
+ ID名.className="新class"
+2018.10.24
+1.多重判断（if..else嵌套语句）
+语法:
+if(条件1){ 条件1成立时执行的代码}
+else if(条件2){ 条件2成立时执行的代码}
+...else  if(条件n){ 条件n成立时执行的代码}
+else{ 条件1、2至n不成立时执行的代码}
+2.数组
+var arr = ['我','呵','呵','你'];
+ //新在数组，并在（）内添加若干数组块，从0开始，'**',为分割符
+ for(var i=0;i<arr.length;i++)// 给i赋值，并给条件，在条件不成立时执行代码
+{
+document.write(arr[i]+'<br>')
+ }//输出代码（arr[i]）,
+2018.10.26
+1.switch
+var ***=5;
+switch(***)
+{
+case 1:
+document.write("1111");
+break;
+case2:
+cocument.write("222");
+break;
+case...:
+document.write("333");
+break;
+default:
+document.write("444");
+2.
+switch(表达式)
+{
+case值1:
+  执行代码块 1
+  break;
+case值2:
+  执行代码块 2
+  break;
+...
+case值n:
+  执行代码块 n
+  break;
+default:
+  与 case值1 、 case值2...case值n 不同时执行的代码
+}
+Switch必须赋初始值，值与每个case值匹配。
+满足执行该 case 后的所有语句，并用break语句来阻止运行下一个case。
+如所有case值都不匹配，执行default后的语句。
+2018.11.29
+1.
+var **=new Date()变量新时间
+document.write(**)输出时间
+
+
+
+
+
+
+
+   
