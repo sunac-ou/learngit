@@ -1,0 +1,60 @@
+1.title显示
+<title>****</title>
+2.css样式引入
+<link rel="stylesheet" type="text/css" href="****.css">
+3.css选择器与选择器权重
+	选择器
+	1.<style type="text/css"></style>
+	2.<div class="***"></div>
+	3.<div style=""></div>
+	权重
+	1.内联
+	2.外联
+	4.伪元素
+	5.伪类
+	6.！in
+	7.通配符
+
+4.滚动条消失.wrapper .top-nav-wrap .top-nav
+	1.visibility: hidden;
+5.快捷键
+	1.alt+F3选择全部相同代码批量修改
+	2.ctrl+d选择全部相同代码批量修改
+6.disp
+7.浮动
+	1.float:left float:rigth;
+8.居中
+	1.margin:0 auto;
+9.文字竖值居中
+	1.text-align:center;
+	   line-height:盒子高度；
+10.盒模型
+	1.内容+内边距+边框=盒子宽度
+11.伪类
+	1.a:hover
+	2.a:link
+	3.
+12.background 
+	1.background:url("./***");引用图片	
+	2.vertical-align: middle;图片竖直对齐
+13.盒子对准基数
+	1.vertical-align: top;上对齐
+14.定位
+	1.position:relative;相对定位   对自己定位
+	2.position:absolute；绝对定位 对父极有绝对定位进行定位
+	3.position:fixed;固定定位
+15.margin(外)/padding(内):top right bottm left
+16.form
+17.背景颜色渐变 linear-gradient
+18.边框圆角
+19.鼠标动作
+	1.cursor: pointer;移到盒子时显示小手	
+20.outline:0;
+21.text-indent:10px;
+22.伪元素 before aftive
+23.文字属性
+24.文字环绕图片
+25.雪碧图
+26.盒模型	转换ie
+	1.box-sizing: border-box;
+27.背景定位
